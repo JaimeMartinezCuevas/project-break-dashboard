@@ -5,7 +5,7 @@ console.log('Hola mundu')
 //de un número, que coincidirá con el índice de una de las fotos.
 //Luego se imprimirá nel fondu y con el set interval podré establecer la duración
 
-const body = document.getElementById('body');
+const fondo = document.getElementById('fondo');
 
 const fotos = [
     './img/bosque.jpg',
@@ -18,20 +18,30 @@ const fotos = [
 let fotoAnterior = '';
 
 function imprimirFondo() {
+
+    //Nombramos una variable que guarde el índce de les semeyes
     let fotoAleatoria;
+    
+    //El do while sirve para que la foto no se repita, porque si se diese el caso,
+    //el bucle volvería a general un índice hasta que este fuera diferente.
     do {
+
+        //Generamos la aleatoriedad en base a los índices del array
         fotoAleatoria = Math.floor(Math.random() * fotos.length);
     } while (fotoAnterior === fotos[fotoAleatoria]);
-
+    
+    //Guardamos el índice en la valiable
     fotoAnterior = fotos[fotoAleatoria];
-    body.style.backgroundImage = 'url(' + fotoAnterior + ')';
-    console.log(fotoAleatoria);
+    fondo.style.backgroundImage = 'url(' + fotoAnterior + ')';
+
+    console.log(fotoAleatoria); //--> Quitalo
 }
 
-setInterval(imprimirFondo, 5000);
+setInterval(imprimirFondo, 20000);
 
 imprimirFondo();
 
 //PROBLEMES
 
-//A vegaes ponse munches veces la mesma foto, igual fago un bucle 
+//  PONER UN EFECTU DE DISOLUCIÓN o asemeyao
+//  (RESUELTO)  A vegaes ponse munches veces la mesma foto, igual fago un bucle
