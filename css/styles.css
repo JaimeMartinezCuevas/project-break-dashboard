@@ -1,4 +1,15 @@
 main {
-    background-color: red;
     color: #fff;
+    text-align: center;
+}
+
+#fondo {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    transition: all .3s ease;
 }
