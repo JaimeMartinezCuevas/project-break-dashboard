@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PK-Generador de contraseñas JMC</title>
-
+    <title>Generador de contraseñas JMC</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
 
 </head>
-<body>
+<body id="body">
+
+    <div id="fondo"></div>
 
     <header>
-
+        <nav>
+            <a href="./reloj.html" class="enlace"><i class='bx bx-time-five'></i></a>
+            <a href="#" class="enlace"><i class='bx bx-lock-alt'></i></a>
+            <a href="./index.html" class="enlace"><i class='bx bxs-home'></i></a>
+            <a href="./links.html" class="enlace"><i class='bx bx-link'></i></a>
+            <i class='bx bx-cloud'></i>       
+        </nav>
     </header>
 
     <main>
-        <a href="./index.html"><h1>TALLUEU MUNDU</h1></a>
+        
+        <h1>QUIÉN YES MUNDU</h1>
+
+        <div class="contraseñas">
+            <input type="number" id="controlador-longitud" min="12" max="50" placeholder="Longitud">
+            <button id="generarContraseña">Generar contraseña segura</button>
+            <div id="imprimirContraseña"></div>
+        </div>
+
     </main>
 
     <footer>
-
     </footer>
     <script src="./js/script-contraseñas.js"></script>
 </body>

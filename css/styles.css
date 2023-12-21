@@ -43,27 +43,50 @@ table {
 }
 
 
-
-
-
 /* PROYECT BREAK CSS */
 
-main {
+header {
+    position: absolute;
     text-align: center;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    background-color: #00000080;
+}
+
+header .bx {
+    font-size: 30px;
+    padding: 0 60px 0 60px;
+    transition: all .2s ease-in-out;
+}
+
+header .bx:hover {
+    transform: scale(1.2);
+}
+
+header .enlace {
+    color: #fff;
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 5%;
     height: 100vh;
 }
 
 main a {
-    color: yellow;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 5px;
-    font-size: 100px;
+    font-size: 50px;
+}
+
+main h1 {
+    color: white;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 110px;
+    text-shadow: #000 0 0 15px;
 }
 
 #fondo {
@@ -80,6 +103,53 @@ main a {
 
     filter: sepia(1);
 
-    /*Quiero pegame un tiru, yera namás q'esto, mil gracies y aleluya*/
     transition: all .3s ease-in-out;
+}
+
+
+/* - RELOJ - */
+
+#body-reloj{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fecha-reloj, .mensaje-reloj {
+    font-size: 18px;
+}
+
+.fecha-reloj {
+    text-align: center;
+}
+
+.reloj{
+    width: 600px;
+    padding: 40px 68px;
+    border-radius: 10px;
+    color: white;
+    background-color: #00000080;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.reloj-digital{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 100px;
+    padding: 30px 0 30px 0;
+    gap: 15px;
+}
+
+.contraseña-generada {
+    color: #fff;
+}
+
+.mensaje-reloj {
+    line-break: normal;
+    text-align: left;
 }
