@@ -81,8 +81,6 @@ btnGenerarContraseña.addEventListener('click', () => {
     const longitud = controladorLongitud.value;
     const contraseña = generarContraseña(longitud);
     imprimirContraseña.innerHTML = `<p class='contraseña-generada'>${contraseña}</p>`;
-
-    console.log(contraseña);
     
 });
 

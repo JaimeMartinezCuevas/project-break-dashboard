@@ -6,40 +6,45 @@
     <title>Generador de enlaces JMC</title>
     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-links.css">
     <link href="https://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
 
 </head>
 <body id="body">
 
-    <div id="fondo"></div>
+    <div id="fondo">
 
-    <header>
+        
+        <header>
         <nav>
             <a href="./reloj.html" class="enlace"><i class='bx bx-time-five'></i></a>
             <a href="./contraseñas.html" class="enlace"><i class='bx bx-lock-alt'></i></a>
             <a href="./index.html" class="enlace"><i class='bx bxs-home'></i></a>
             <a href="#" class="enlace"><i class='bx bx-link'></i></a>
-            <i class='bx bx-cloud'></i>
+            <a href="./tiempo.html" class="enlace"><i class='bx bx-cloud'></i></a>
         </nav>
     </header>
-
+    
     <main>
         
-        <h1>PA ONDE ENLLACES MUNDU</h1>
-
-        <input type="text" id="nombre" placeholder="Título">
-        <input type="text" id="enlace" placeholder="Link">
-        <div class="link-btns">
-            <button id="añadir-enlace">Añadir enlace</button>
-            <button id="limpiar-lista">Eliminar Todos los Enlaces</button>
+        <h1>Generador de enlaces</h1>
+        <div class="container-enlaces">
+            <input type="text" id="nombre" placeholder="Título">
+            <input type="text" id="enlace" placeholder="Link">
+            <div class="link-btns">
+                <button id="añadir-enlace">Añadir enlace</button>
+                <button id="limpiar-lista">Eliminar enlaces</button>
+            </div>
+            <ul id="lista-enlaces"></ul>
         </div>
-        <ul id="lista-enlaces"></ul>
         
     </main>
 
     <footer>
     </footer>
+
+    </div>
+
     <script src="./js/script-links.js"></script>
 </body>
 </html>

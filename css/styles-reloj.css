@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* PROYECT BREAK CSS */
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    background-color: #00000080;
+    backdrop-filter: blur(4px);
+}
+
+header .bx {
+    font-size: 30px;
+    padding: 0 60px 0 60px;
+    transition: all .2s ease-in-out;
+}
+
+header .bx:hover {
+    transform: scale(1.2);
+}
+
+header .enlace {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    height: 100vh;
+}
+
+main a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+main h1 {
+    color: white;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 110px;
+    text-shadow: #000 0 0 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#fondo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -10;
+
+    /* Afecta a todo el contenido */
+    /* filter: sepia(1); */
+
+    transition: all .3s ease-in-out;
+}
+
+/* style="width: 600; height: 300; background-color: #00000080; padding: 50px 100px; border-radius: 10px; color: #fff; */
+
+.container-main-reloj {
+    background-color: #00000080;
+    color: #fff;
+    width: 600px;
+    height: 300px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.reloj-dijital-index {
+    font-size: 10px;
+}
+
+/* - RELOJ - */
+
+#body-reloj{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fecha-reloj, .mensaje-reloj {
+    font-size: 18px;
+}
+
+.fecha-reloj {
+    text-align: center;
+}
+
+.reloj{
+    /* width: 600px; */
+    padding: 40px 68px;
+    margin: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: #00000080;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.reloj-digital{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 100px;
+    padding: 30px 0 30px 0;
+    gap: 15px;
+}
+
+.mensaje-reloj {
+    line-break: normal;
+    text-align: left;
+}

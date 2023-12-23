@@ -12,7 +12,8 @@
 </head>
 <body id="body">
 
-    <div id="fondo"></div>
+    <div id="fondo">
+
 
     <header>
         <nav>
@@ -20,17 +21,89 @@
             <a href="./contraseñas.html" class="enlace"><i class='bx bx-lock-alt'></i></a>
             <a href="#" class="enlace"><i class='bx bxs-home'></i></a>
             <a href="./links.html" class="enlace"><i class='bx bx-link'></i></a>
-            <i class='bx bx-cloud'></i>        
+            <a href="./tiempo.html" class="enlace"><i class='bx bx-cloud'></i></a>
         </nav>
     </header>
 
     <main>
-        <h1>HOLA MUNDU</h1>
+        <h1>Dashboard</h1>
+
+        <div class="container-main">
+
+            <div class="container-main-reloj">
+                <h3>Reloj digital</h3>
+                <p id="fecha" class="fecha-reloj">¿Qué día ye güei?</p>
+                <br>
+                <p  class="fecha-reloj">Madrid, España</p>
+                <br>
+                <ul class="reloj-digital reloj-dijital-index">
+                    <li id="horas">00</li>
+                    <li>:</li>
+                    <li id="minutos">00</li>
+                    <li>:</li>
+                    <li id="segundos">00</li>
+                </ul>
+            </div>
+
+            <div class="columna-intermedia">
+
+                <div class="container-main-contraseñas">
+                    <div class="container-contraseñas-main">
+                        <h3>Generador de contraseñas</h3>
+                        <div class="contraseñas-controles">
+                            <input type="number" id="controlador-longitud" min="12" max="50" placeholder="Longitud">
+                            <button id="generarContraseña">Generar contraseña</button>
+                        </div>
+                        <div id="imprimirContraseña"></div>
+                    </div>
+
+                </div>
+
+                <div class="container-main-enlaces">
+                    <div class="container-enlaces">
+                        <h3>Lista de enlaces</h3>
+                        <ul id="lista-enlaces"></ul>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="container-main-tiempo">
+
+                <div>
+                    <div class="tiempo-container1">
+                        <h2 id="tiempo-ciudad" class="ciudad">#</h2>
+                        <h3 id="tiempo-estado" class="estado">#</h3>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="tiempo-container2">
+    
+                        <img id="icono-tiempo" src="" alt="Weather Icon">
+                        <h4 class="tiempo-grados"><span id="grados"></span>°C</h4>
+    
+                    </div>
+    
+                    <div class="tiempo-container3">
+                        <p>Precipitaciones: <span id="precipitaciones"></span> mm</p>
+                        <p>Humedad: <span id="humedad"></span>%</p>
+                        <p>Viento: <span id="viento"></span> km/h</p>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+
     </main>
 
     <footer>
 
     </footer>
+    
+    </div>
+
     <script src="./js/script.js"></script>
 </body>
 </html>

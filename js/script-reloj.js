@@ -27,7 +27,6 @@ function imprimirFondo() {
     fotoAnterior = fotos[fotoAleatoria];
     fondo.style.backgroundImage = 'url(' + fotoAnterior + ')';
 
-    console.log(fotoAleatoria); //--> Quitalo
 }
 
 setInterval(imprimirFondo, 20000);

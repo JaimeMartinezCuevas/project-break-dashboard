@@ -93,12 +93,6 @@ h1 {
     text-align: center;
 }
 
-.container-main {
-    display: flex;
-    /* flex-direction: column; */
-    gap: 20px;
-}
-
 #fondo {
     background-repeat: no-repeat;
     background-position: center;
@@ -127,169 +121,23 @@ h1 {
     border-radius: 10px;
 }
 
-.container-main-reloj h3{
-    font-size: 30px;
-    padding-bottom: 20px;
-    letter-spacing: 2px;
-    font-weight: 200;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-}
-
 .reloj-dijital-index {
     font-size: 10px;
 }
 
-/* - RELOJ - */
+/* - TIEMPO - */
 
-.container-main-reloj {
-    margin: 0;
-    padding: 40px;
-
-    width: auto;
-    height: auto;
-}
-
-#body-reloj{
-    height: auto;
+.tiempo-container-main {
+    background-color: #00000080;
+    color: #fff;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-}
-
-.fecha-reloj, .mensaje-reloj {
-    font-size: 18px;
-    text-align: left;
-}
-
-.reloj{
-    /* width: 600px; */
+    border-radius: 10px;
+    padding: 40px;
     margin: 40px;
-    border-radius: 10px;
-    color: white;
-    background-color: #00000080;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.reloj-digital{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    font-size: 40px;
-    padding: 10px 0 0 0;
-    gap: 15px;
-}
-
-.mensaje-reloj {
-    line-break: normal;
-    text-align: left;
-}
-
-/* - COLUMNA INTERMEDIA -*/
-
-.columna-intermedia {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-}
-
-/* - CONTRASEÑAS - */
-
-.container-main-contraseñas h3 {
-    font-size: 30px;
-    padding-bottom: 10px;
-    letter-spacing: 2px;
-    font-weight: 200;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-}
-.container-contraseñas-main {
-    background-color: #00000080;
-    color: #fff;
-    border-radius: 10px;
-    padding: 16px;
-    padding-top: 26px;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: auto;
-    height: auto;
-}
-
-.contraseñas-controles {
-    display: flex;
-    gap: 20px;
-    width: auto;
-}
-
-.contraseñas-controles input, .contraseñas-controles button {
-    text-align: center;
-    border: 2px #fff solid;
-    background-color: transparent;
-    color: #fff;
-    width: 50%;
-    padding: 8px;
-    border-radius: 50px;
-    cursor:pointer;
-
-    transition: all .2s ease-in-out;
-}
-
-.contraseñas-controles button:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.contraseña-generada {
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    padding: 12px;
-    /* width: 100%; */
-}
-
-/* - ENLACES - */
-
-.container-enlaces {
-    background-color: #00000080;
-    color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 50px;
-    border-radius: 10px;
-}
-
-.container-enlaces h3 {
-    font-size: 30px;
-    padding-bottom: 10px;
-    letter-spacing: 2px;
-    font-weight: 200;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-}
-
-#lista-enlaces .enlace a{
-    font-size: 18px;
-}
-
-/* TIEMPO */
-
-.container-main-tiempo {
-    background-color: #00000080;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 40px;
     max-width: 1100px;
+    z-index: 100;
 }
 
 .ciudad {
@@ -308,7 +156,7 @@ h1 {
 
 .tiempo-container1 {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
     font-weight: 800;
 }
@@ -361,4 +209,17 @@ h1 {
 
 .tiempo-grados {
     font-size: 30px;
+}
+
+#lista-prevision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#lista-prevision > * {
+    flex-basis: calc(100% / 4);
+    flex-grow: 1;
+    box-sizing: border-box;
 }
